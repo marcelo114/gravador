@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gravador Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gravador de Tela</h1>
+        <div class="status-bar">
+            <span id="timer">00:00:00</span>
+            <span id="status-text">Clique em Selecionar</span>
+        </div>
+
+        <video id="preview" autoplay muted playsinline></video>
+
+        <div class="controls">
+            <button id="selectBtn" type="button">1. Selecionar Tela</button>
+            <button id="startBtn" type="button" disabled>2. Gravar</button>
+            <button id="pauseBtn" type="button" disabled>Pausar</button>
+            <button id="stopBtn" type="button" disabled>Parar</button>
+        </div>
+        
+        <div class="settings">
+            <input type="checkbox" id="autoDownload" checked> Download Automático
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
